@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.AdminRegister">
+
+    <EditText
+        android:id="@+id/adminNameText"
+        android:layout_width="268dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="54dp"
+        android:ems="10"
+        android:hint="name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminImage" />
+
+    <EditText
+        android:id="@+id/adminEmailText"
+        android:layout_width="266dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:hint="email"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminNameText" />
+
+    <EditText
+        android:id="@+id/adminMobileText"
+        android:layout_width="267dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="mobile"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminEmailText" />
+
+    <Button
+        android:id="@+id/saveAdmin_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="38dp"
+        android:backgroundTint="#EDB408"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminMobileText" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="196dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="24dp"
+        android:text="Registere Here"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/adminImage"
+        android:layout_width="161dp"
+        android:layout_height="159dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="126dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:srcCompat="@drawable/profile" />
+
+
+    <Button
+        android:id="@+id/camera_btn"
+        android:layout_width="45dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="207dp"
+        android:layout_marginEnd="81dp"
+        android:background="@drawable/ic_camera"
+        android:backgroundTint="#101010"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/adminImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

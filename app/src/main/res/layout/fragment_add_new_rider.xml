@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.AddNewRiderFragment">
+
+
+    <ImageView
+        android:id="@+id/riderImage"
+        android:layout_width="104dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/riderName_text"
+        android:layout_width="236dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="rider name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/riderImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/riderAddress_text"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="27dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="address"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/riderName_text" />
+
+    <EditText
+        android:id="@+id/riderEmail_text"
+        android:layout_width="241dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="27dp"
+        android:ems="10"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/riderAddress_text" />
+
+    <EditText
+        android:id="@+id/riderPhone_text"
+        android:layout_width="238dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="27dp"
+        android:ems="10"
+        android:hint="mobile no"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/riderEmail_text" />
+
+    <EditText
+        android:id="@+id/vehicleNo_text"
+        android:layout_width="238dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="27dp"
+        android:ems="10"
+        android:hint="vehicle no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/riderPhone_text" />
+
+    <EditText
+        android:id="@+id/licenseNo_text"
+        android:layout_width="239dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="license no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vehicleNo_text" />
+
+    <ImageView
+        android:id="@+id/vehicle_image"
+        android:layout_width="107dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/ic_baseline_drive_eta_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/riderSelectImage_btn" />
+
+    <ImageView
+        android:id="@+id/license_image"
+        android:layout_width="113dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_lise"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vehicleNoImage_btn" />
+
+    <Button
+        android:id="@+id/saveRider_btn"
+        android:layout_width="135dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="138dp"
+        android:backgroundTint="#D8A302"
+        android:text="Save Rider"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/licenseNo_text" />
+
+    <ImageView
+        android:id="@+id/riderSelectImage_btn"
+        android:layout_width="33dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="52dp"
+        android:src="@drawable/ic_camera"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/riderImage" />
+
+    <ImageView
+        android:id="@+id/vehicleNoImage_btn"
+        android:layout_width="33dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="52dp"
+        android:src="@drawable/ic_camera"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vehicle_image" />
+
+    <ImageView
+        android:id="@+id/licenseNoImage_btn"
+        android:layout_width="33dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="52dp"
+        android:src="@drawable/ic_camera"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/license_image" />
+</androidx.constraintlayout.widget.ConstraintLayout>

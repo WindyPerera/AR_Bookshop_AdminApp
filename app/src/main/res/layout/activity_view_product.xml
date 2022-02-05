@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.ViewProductActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/toolbar_layout" />
+        </com.google.android.material.appbar.AppBarLayout>
+    </LinearLayout>
+
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:id="@+id/constraintLayout"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/linearLayout">-->
+
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/textView15"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="10dp"-->
+    <!--            android:layout_marginTop="17dp"-->
+    <!--            android:text="Category"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--        <Spinner-->
+    <!--            android:id="@+id/prices"-->
+    <!--            android:layout_width="82dp"-->
+    <!--            android:layout_height="21dp"-->
+    <!--            android:layout_marginTop="17dp"-->
+    <!--            app:layout_constraintStart_toEndOf="@+id/textView19"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/textView16"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="11dp"-->
+    <!--            android:layout_marginTop="17dp"-->
+    <!--            android:text="Brand"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            app:layout_constraintStart_toEndOf="@+id/catogery_list"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--        <Spinner-->
+    <!--            android:id="@+id/brand_list"-->
+    <!--            android:layout_width="82dp"-->
+    <!--            android:layout_height="21dp"-->
+    <!--            android:layout_marginStart="5dp"-->
+    <!--            android:layout_marginTop="17dp"-->
+    <!--            app:layout_constraintStart_toEndOf="@+id/textView16"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/textView19"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="11dp"-->
+    <!--            android:layout_marginTop="17dp"-->
+    <!--            android:text="Price"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            app:layout_constraintStart_toEndOf="@+id/brand_list"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--        <Spinner-->
+    <!--            android:id="@+id/catogery_list"-->
+    <!--            android:layout_width="82dp"-->
+    <!--            android:layout_height="21dp"-->
+    <!--            android:layout_marginStart="5dp"-->
+    <!--            android:layout_marginTop="17dp"-->
+    <!--            app:layout_constraintStart_toEndOf="@+id/textView15"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <ir.androidexception.datatable.DataTable
+        android:id="@+id/data_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/oldPrintBtn"
+        android:layout_marginTop="10dp"
+        app:corner_radius="8dp"
+        app:direction="ltr"
+        app:header_background_color="#F8DD8D"
+        app:header_gravity="center"
+        app:header_horizontal_padding="0dp"
+        app:header_text_color="#000"
+        app:header_text_size="5sp"
+        app:header_vertical_padding="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:persian_number="false"
+        app:row_background_color="#fff"
+        app:row_gravity="center"
+        app:row_text_color="#000"
+        app:row_text_size="4sp"
+        app:row_vertical_padding="14dp"
+        app:shadow="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
